@@ -3,7 +3,11 @@ from art import logo
 
 
 def guess_number():
+<<<<<<< HEAD
     correct_number = random.randint(1, 100)
+=======
+    correct_number = random.choice(guess_numbers)
+>>>>>>> bee19af0c2d9828e166a1d9375731f844bc47826
     print("I'm thinking of a number between 1 and 100.")
     print(f"Pssst, the correct number is {correct_number}")
     difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
@@ -42,6 +46,10 @@ should_play_continue = True
 while should_play_continue:
     print(logo)
     print("Welcome to the Guessing Numbers game!")
+<<<<<<< HEAD
+=======
+    guess_numbers = list(range(1, 101))
+>>>>>>> bee19af0c2d9828e166a1d9375731f844bc47826
     guess_number()
     players_answer = input("\nDo you want to guess again? Type 'yes' or 'no' ")
     if players_answer == 'no':
